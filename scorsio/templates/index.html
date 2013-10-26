@@ -9,8 +9,6 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
         <link rel="stylesheet" href="{{ ASSET_URL }}css/lib/bootstrap-3.0.0.min.css"  media="screen">
-        <link rel="stylesheet" href="{{ ASSET_URL }}css/lib/normalize.css">
-        <link rel="stylesheet" href="{{ ASSET_URL }}css/src/main.css">
         <script src="{{ ASSET_URL }}js/lib/modernizr-2.6.2.min.js"></script>
         
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,14 +16,43 @@
 	      <script src="{{ ASSET_URL }}js/html5shiv-3.6.2.js"></script>
 	      <script src="{{ ASSET_URL }}js/respond-1.1.0.min.js"></script>
 	    <![endif]-->
+	    
+	    <!-- Custom styles for this template -->
+	    <link rel="stylesheet" href="{{ ASSET_URL }}css/lib/normalize.css">
+        <link rel="stylesheet" href="{{ ASSET_URL }}css/src/main.css">
+        <link rel="stylesheet" href="{{ ASSET_URL }}css/src/starter-template.css">
     </head>
     <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+			            <li><a href="#about">About</a></li>
+			            <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="starter-template">
+              <h1>Bootstrap starter template</h1>
+                <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            </div>
+        </div><!-- /.container -->
+
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{{ ASSET_URL }}js/lib/jquery-1.10.2.min.js"><\/script>')</script>
