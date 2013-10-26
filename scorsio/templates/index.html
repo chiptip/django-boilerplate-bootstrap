@@ -8,10 +8,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-
-        <link rel="stylesheet" href="{{ ASSET_URL }}css/normalize.css">
-        <link rel="stylesheet" href="{{ ASSET_URL }}css/main.css">
+        <link rel="stylesheet" href="{{ ASSET_URL }}css/lib/bootstrap-3.0.0.min.css"  media="screen">
+        <link rel="stylesheet" href="{{ ASSET_URL }}css/lib/normalize.css">
+        <link rel="stylesheet" href="{{ ASSET_URL }}css/src/main.css">
         <script src="{{ ASSET_URL }}js/lib/modernizr-2.6.2.min.js"></script>
+        
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="{{ ASSET_URL }}js/html5shiv-3.6.2.js"></script>
+	      <script src="{{ ASSET_URL }}js/respond-1.1.0.min.js"></script>
+	    <![endif]-->
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -23,6 +29,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{{ ASSET_URL }}js/lib/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="{{ ASSET_URL }}js/lib/bootstrap-3.0.0.min.js"></script>
         <script src="{{ ASSET_URL }}js/src/plugins.js"></script>
         <script src="{{ ASSET_URL }}js/src/main.js"></script>
 
